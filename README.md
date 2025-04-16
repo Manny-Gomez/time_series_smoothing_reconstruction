@@ -3,12 +3,13 @@
 ## Overview
 A CUDA-accelerated project to smooth and reconstruct noisy signal data using a moving average kernel and interpolation heuristics.
 
-
 In this CUDA-based signal processing project, we're applying time-series smoothing and signal reconstruction to noisy signal data. The process involves:
 
 Smoothing: A moving average filter (or similar smoothing method) is applied to a signal to reduce noise and smooth out abrupt variations.
 
 Reconstruction: In the case of large variations or missing data, we apply an interpolation method to fill in the gaps and ensure the reconstructed signal follows a more consistent pattern.
+
+
 
 Explanation of Input:
 Raw Signal: This signal could represent sensor data that fluctuates wildly. For instance:
@@ -21,6 +22,9 @@ Goal: Our goal is to smooth this signal to remove noise (spikes and high variati
 
 Smoothed Output Signal:
 After applying the moving average smoothing and signal reconstruction algorithm, we expect to see the high spikes (like the 1000.0 and 100.0) reduced and more consistent values throughout.
+
+
+
 
 Explanation of Output:
 Noise Reduction: The large spikes (like 1000.0 and 100.0) have been smoothed out. The algorithm has averaged the surrounding values to reduce the impact of sudden changes in the data.
