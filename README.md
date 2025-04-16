@@ -3,15 +3,6 @@
 ## Overview
 A CUDA-accelerated project to smooth and reconstruct noisy signal data using a moving average kernel and interpolation heuristics.
 
-## Dataset
-Test data from: [DSPRelated Sound Examples](https://www.dsprelated.com/freebooks/pasp/Sound_Examples.html)
-
-## How to Run
-
-```bash
-chmod +x run.sh
-./run.sh
-
 
 In this CUDA-based signal processing project, we're applying time-series smoothing and signal reconstruction to noisy signal data. The process involves:
 
@@ -39,3 +30,17 @@ For example, the 1000.0 value at index 9 is averaged with the neighboring values
 Reconstruction: The smoothing not only reduces noise but also helps to "fill in" gaps where the signal might have been missing or irregular (such as around the spikes). The reconstructed signal is more consistent and follows the general trend of the original signal.
 
 For instance, values like 50.0 and 100.0 (which are outliers) are "reconstructed" as smoother values (12.67, 31.33, etc.).
+
+
+
+## Dataset
+Test data from: [DSPRelated Sound Examples](https://www.dsprelated.com/freebooks/pasp/Sound_Examples.html)
+
+## How to Run
+
+```bash
+chmod +x run.sh
+./run.sh
+
+
+
